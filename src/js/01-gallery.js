@@ -39,8 +39,7 @@ function onClickSimpleLightBox(e) {
   if (!e.target.classList.contains('gallery__image')) {
     return;
   }
-    const fullSizeImage = e.target.parentNode;
-
+ 
   let lightbox = new SimpleLightbox('.gallery a',
     {
       captionsData: 'alt',
