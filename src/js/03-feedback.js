@@ -3,11 +3,11 @@ const formRef = document.querySelector('.feedback-form');
 formRef.addEventListener('input', onInputChange);
 // formRef.addEventListener('submit', onFormSubmit);
 
+populateFormInputs();
+
 const STORAGE_KEY = 'feedback-form-state';
 
 const userData= {};
-
-// populateFormInputs();
 
 function onInputChange(e) {
     userData[e.target.name] = e.target.value;
@@ -24,12 +24,7 @@ function onInputChange(e) {
 //     console.log(`${formValue}`);
 // }
 
-// function populateFormInputs(e) {
-//     const savedData = localStorage.getItem(STORAGE_KEY);
-
-//     if(savedData) {
-//         // 
-//         console.log(JSON.parse(savedData))
-        
-//     }
-// }
+function populateFormInputs() {
+    const savedData = localStorage.getItem(STORAGE_KEY);
+    console.log('hello')
+}
